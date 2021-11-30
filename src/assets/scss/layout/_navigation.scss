@@ -1,0 +1,12 @@
+.nav-box{
+  display: inline-flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  li {
+    padding: 0 10px;
+  }
+  li:hover{
+    background: lightgreen;
+  }
+}

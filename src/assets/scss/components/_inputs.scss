@@ -1,0 +1,23 @@
+.login_wrap{
+  margin: 0 auto;
+  .id_pw_wrap{
+    display: inline-grid;
+    .id_label{
+      padding: 0 23px;
+    }
+    .pwd_label{
+      padding: 0 8px;
+    }
+    .id_line{
+      margin-bottom: 10px;
+    }
+    .pw_line{
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.main_search{
+  display: flex;
+  justify-content: center;
+}
