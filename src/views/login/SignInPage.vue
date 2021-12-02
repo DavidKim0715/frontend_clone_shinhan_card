@@ -1,64 +1,51 @@
 <template>
   <section>
-    <h2>Login</h2>
     <form class="login_wrap" @submit.prevent="submitLogin">
-      <LoginInput @user-info="getUserInfo"/>
-      <div class="btn_login_register_wrap" >
-        <CommonButton
-          msg="로그인"
-          type="submit"
-        />
-        <CommonButton
-          msg="가입하기"
-        />
-      </div>
+      <login-field @user-info="getUserInfo" />
     </form>
   </section>
 </template>
 
 <script>
-
 import { computed, defineComponent, reactive, toRefs, watch } from "vue";
-import { createNamespacedHelpers } from 'vuex';
+import { createNamespacedHelpers } from "vuex";
 const { mapGetters, mapActions } = createNamespacedHelpers("auth");
 
-import LoginInput from "../../components/common/input/LoginInput";
-import CommonButton from "../../components/common/button/CommonButton";
-
+import LoginField from "@/components/common/input/LoginField";
 
 const SignInPage = defineComponent({
   name: "SignInPage",
-  components : { CommonButton, LoginInput  },
-  props :{},
+  components: { LoginField },
+  props: {},
   computed: {
     ...mapGetters({
-      getLoginStatus : 'getLoginStatus'
+      getLoginStatus: "getLoginStatus",
     }),
   },
-  methods :{
+  methods: {
     ...mapActions({
-      actionLogin : 'LOGIN',
+      actionLogin: "LOGIN",
     }),
   },
-  setup(props){
+  setup(props) {
     //variables
-    let userInfo = null
+    let userInfo = null;
 
-    const getUserInfo = (info) =>{
-      userInfo = info
-    }
-    const submitLogin = async () =>{
-      await this.actionLogin(userInfo)
-      if(this.getLoginStatus === 'success'){
-        window.alert('로그인에 성공하셨습니다')
-      }else{
-        window.alert('로그인에 실패하셨습니다')
+    const getUserInfo = (info) => {
+      userInfo = info;
+    };
+    const submitLogin = async () => {
+      await this.actionLogin(userInfo);
+      if (this.getLoginStatus === "success") {
+        window.alert("로그인에 성공하셨습니다");
+      } else {
+        window.alert("로그인에 실패하셨습니다");
       }
-    }
+    };
 
     //life-cycle
-    return { userInfo, getUserInfo, submitLogin}
-  }
-})
-export default SignInPage
+    return { userInfo, getUserInfo, submitLogin };
+  },
+});
+export default SignInPage;
 </script>

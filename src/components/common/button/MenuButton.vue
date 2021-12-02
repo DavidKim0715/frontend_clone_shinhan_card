@@ -2,19 +2,19 @@
 import { defineComponent } from "vue";
 
 const MenuButton = defineComponent({
-  name : 'MenuButton',
-  components : {},
+  name: "MenuButton",
+  components: {},
   methods: {},
   props: {},
-  setup(){
-
-    return{}
-  }
-})
-export default MenuButton
+  setup() {
+    return {};
+  },
+});
+export default MenuButton;
 </script>
 <template>
-  <button>
-    <span>aa</span>
+  <button class="btn_all_menu" type="button">
+    <img src="@/assets/icon/ico-all-menu.png" />
+    <span class="blind">메뉴</span>
   </button>
 </template>

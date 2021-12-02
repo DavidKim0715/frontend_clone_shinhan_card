@@ -1,1 +1,14 @@
-$font-stack: ('Helvetica', 'Arial', sans-serif);
+$font-stack: ("Helvetica", "Arial", sans-serif);
+
+.blind {
+  position: absolute;
+  left: -999px;
+  top: -999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin-left: -1px;
+  border: 0 none !important;
+  background: transparent !important;
+  color: transparent !important;
+}

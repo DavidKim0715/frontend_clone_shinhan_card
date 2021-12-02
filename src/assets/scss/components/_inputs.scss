@@ -1,23 +1,38 @@
-.login_wrap{
+.login_wrap {
   margin: 0 auto;
-  .id_pw_wrap{
+  .id_pw_wrap {
     display: inline-grid;
-    .id_label{
-      padding: 0 23px;
+    .id_label {
+      background: #fff;
+      &.is_focus {
+      }
     }
-    .pwd_label{
+    .pwd_label {
       padding: 0 8px;
     }
-    .id_line{
+    .id_line {
       margin-bottom: 10px;
+      &.is_focus {
+        //padding: 0 16px;
+        border-width: 2px;
+        color: #333;
+        //border-color: #4768e1;
+        font-weight: 700;
+        line-height: 56px;
+      }
     }
-    .pw_line{
+    .pw_line {
       margin-bottom: 10px;
     }
   }
 }
 
-.main_search{
-  display: flex;
-  justify-content: center;
+.main_search_wrap {
+  margin: 0 auto;
+  width: 600px;
+  .main_search {
+    padding-right: 33px;
+    padding-left: 10px;
+    width: 100%;
+  }
 }

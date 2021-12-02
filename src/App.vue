@@ -7,8 +7,8 @@
 <script>
 import AppLayout from "@/layouts/AppLayout";
 export default {
-  components: { AppLayout }
-}
+  components: { AppLayout },
+};
 </script>
 
 <style lang="scss">

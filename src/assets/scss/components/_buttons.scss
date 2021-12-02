@@ -1,37 +1,51 @@
 // 버튼 관련 변수
-.btn_normal{
+.btn_normal {
   border-radius: 6px;
-  border: solid 1px rgba(0,0,0,.15);
+  border: solid 1px rgba(0, 0, 0, 0.15);
   background-color: #03c75a;
   padding: 17px 0 15px;
-  .btn_text{
+  .btn_text {
     color: #fff;
     line-height: 26px;
     font-size: 22px;
     font-weight: 700;
   }
 }
-.ripple{
-
+.ripple {
 }
 
-.bx_direction_wrapper{
-  display: flex;
-  justify-content: space-between;
-  .bx_next{
-
+.swiper_direction_wrapper {
+  .swiper_btn_prev {
+    background: url("/src/assets/icon/ico-prev.png") 50% 50% / auto 20px no-repeat;
+    position: absolute;
+    left: 17%;
+    top: 37%;
   }
-  .bx_next{
-
+  .swiper_btn_next{
+    background: url("/src/assets/icon/ico-prev.png") 50% 50% / auto 20px no-repeat;
+    position: absolute;
+    transform: scaleX(-1);
+    left: 79%;
+    top: 37%;
   }
 }
-.btn_prev{
-  background: url("@/assets/image/btn_prev.png") no-repeat;
+.btn_prev {
+  background: url("/src/assets/icon/ico-prev.png") 50% 50% / auto 20px no-repeat;
+  border: none;
 }
-.btn_next{
-  background: url("") no-repeat;
+.btn_next {
+  //background: url("") no-repeat;
 }
-
+.btn_search {
+  background: url("/src/assets/icon/ico-search.png") 50% 50% / auto 20px
+    no-repeat;
+  border: none;
+}
+.btn_all_menu {
+  background: url("/src/assets/icon/ico-all-menu.png") 50% 50% / auto 20px
+    no-repeat;
+  border: none;
+}
 
 // … 버튼 관련 include
 // - 믹스인
@@ -39,5 +53,5 @@
 // - 함수
 
 /**
- * 버튼
- */
+* 버튼
+*/

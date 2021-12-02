@@ -10,12 +10,9 @@ import SignInPage from "../login/SignInPage";
 
 const SignUpPage = defineComponent({
   name: "SignUpPage",
-  components : {},
-})
-export default SignInPage
-
+  components: {},
+});
+export default SignInPage;
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

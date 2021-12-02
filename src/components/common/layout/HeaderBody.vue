@@ -5,10 +5,10 @@ import MainNavBar from "@/components/common/layout/MainNavBar.vue";
 
 const HeaderBody = defineComponent({
   name: "HeaderBody",
-  components : { MainNavBar, MenuButton  },
-  props :{},
-  emits : {},
-  setup(props){
+  components: { MainNavBar, MenuButton },
+  props: {},
+  emits: {},
+  setup(props) {
     //variables
 
     //methods
@@ -16,16 +16,16 @@ const HeaderBody = defineComponent({
     //computed
 
     //life-cycle
-    return {}
-  }
-})
-export default HeaderBody
+    return {};
+  },
+});
+export default HeaderBody;
 </script>
 <template>
   <div class="body_inner">
     <h1>
       <router-link to="/">
-        <img src="@/assets/logo.png" alt="ShinhanCard"/>
+        <img src="@/assets/logo.png" alt="ShinhanCard" />
       </router-link>
     </h1>
     <main-nav-bar />

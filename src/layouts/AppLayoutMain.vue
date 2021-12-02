@@ -15,16 +15,15 @@ import HeaderBody from "@/components/common/layout/HeaderBody.vue";
 import FooterCollection from "@/components/common/layout/FooterCollection.vue";
 import { defineComponent } from "vue";
 const AppLayoutMain = defineComponent({
-  name : 'AppLayoutMain',
-  components : {
+  name: "AppLayoutMain",
+  components: {
     FooterCollection,
     HeaderBody,
     HeaderTop,
   },
-  setup(){
-
-    return{}
-  }
-})
-export default AppLayoutMain
+  setup() {
+    return {};
+  },
+});
+export default AppLayoutMain;
 </script>

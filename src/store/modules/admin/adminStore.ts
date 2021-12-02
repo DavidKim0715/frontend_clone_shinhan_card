@@ -1,13 +1,7 @@
-const adminStore ={
-  namespaced :true,
-  state: {
-
-  },
-  getters: {
-
-  },
-  mutations: {
-
-  },
-}
-export default adminStore
+const adminStore = {
+  namespaced: true,
+  state: {},
+  getters: {},
+  mutations: {},
+};
+export default adminStore;

@@ -1,12 +1,13 @@
 <template>
   <section>
     <h2>설정 페이지</h2>
-
   </section>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref,
+import {
+  defineComponent,
+  ref,
   reactive,
   computed,
   toRefs,
@@ -16,30 +17,27 @@ import { defineComponent, ref,
   onBeforeUpdate,
   onUpdated,
   onBeforeUnmount,
-  onUnmounted } from "vue";
+  onUnmounted,
+} from "vue";
 import HelloWorld from "@/components/HelloWorld.vue";
 import { useStore } from "vuex"; // @ is an alias to /src
 interface Pagination {
-  currentPage: number
-  totalPage: number
+  currentPage: number;
+  totalPage: number;
 }
 const state = reactive<Pagination>({
   currentPage: 1,
-  totalPage: 0
-})
+  totalPage: 0,
+});
 
 const ConfigPage = defineComponent({
-  name : 'ConfigPage',
-  components:{
-
-  },
+  name: "ConfigPage",
+  components: {},
   props: {
-    name: String
+    name: String,
   },
   setup(props, context) {
-    const store = useStore()
-
-
+    const store = useStore();
 
     /*
     const store = useStore()
@@ -55,8 +53,7 @@ const ConfigPage = defineComponent({
 
         return { showCreateModal, setModal, tasks, showEditModal,showTaskModal, editTaskId, showTaskId }
      */
-  }
-
-})
-export default ConfigPage
+  },
+});
+export default ConfigPage;
 </script>

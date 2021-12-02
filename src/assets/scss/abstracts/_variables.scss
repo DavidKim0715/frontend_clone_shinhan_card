@@ -1,17 +1,16 @@
 // sass variables
 
-
 // 루트 수준에 전역 변수를 초기화합니다.
-$variable: 'initial value';
+$variable: "initial value";
 
 // 전역 변수를 덮어쓰게 하는 믹스인을 만듭니다.
 @mixin global-variable-overriding {
-  $variable: 'mixin value' !global;
+  $variable: "mixin value" !global;
 }
 
 .local-scope::before {
   // 전역 변수를 가리는 지역 변수를 만듭니다.
-  $variable: 'local value';
+  $variable: "local value";
 
   // 믹스인 인클루드: 전역 변수를 덮어씁니다.
   @include global-variable-overriding;
@@ -26,6 +25,5 @@ $variable: 'initial value';
 .other-local-scope::before {
   content: $variable;
 }
-
 
 $bgColor: red;

@@ -7,7 +7,7 @@
 import { defineComponent } from "vue";
 
 const UserInfoPage = defineComponent({
-  name : 'UserInfoPage'
-})
-export default UserInfoPage
+  name: "UserInfoPage",
+});
+export default UserInfoPage;
 </script>

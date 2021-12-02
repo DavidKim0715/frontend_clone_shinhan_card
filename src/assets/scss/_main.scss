@@ -27,39 +27,24 @@
 //@use'themes/theme';
 //@use'themes/admin';
 
-@import 'abstracts/variables',
-'abstracts/functions',
-'abstracts/mixins';
+@import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
 
-@import 'vendors/vuetify',
-'vendors/jquery-ui';
+@import "vendors/vuetify", "vendors/jquery-ui";
 
-@import 'base/reset',
-'base/typography';
+@import "base/reset", "base/typography";
 
-@import'layout/navigation',
-'layout/grid',
-'layout/header',
-'layout/footer',
-'layout/sidebar',
- 'layout/forms';
+@import "layout/navigation", "layout/grid", "layout/header", "layout/footer",
+  "layout/sidebar", "layout/forms";
 
-@import
-'components/buttons',
-'components/carousel',
-'components/cover',
-'components/dropdown',
-'components/inputs';
+@import "components/buttons", "components/carousel", "components/cover",
+  "components/dropdown", "components/inputs";
 
-@import'pages/home',
-'pages/contact';
+@import "pages/home", "pages/contact";
 
-@import'themes/theme',
-'themes/admin';
+@import "themes/theme", "themes/admin";
 
 //ul 태그 불릿 제거
-ul{
- list-style:none;
- padding-left:0px;
+ul {
+  list-style: none;
+  padding-left: 0px;
 }
-

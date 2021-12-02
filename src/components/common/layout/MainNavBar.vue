@@ -35,7 +35,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 const MainNavBar = defineComponent({
-  name : "MainNavBar",
-})
-export default MainNavBar
+  name: "MainNavBar",
+});
+export default MainNavBar;
 </script>

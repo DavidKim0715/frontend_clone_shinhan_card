@@ -1,4 +1,4 @@
-.nav-box{
+@mixin nav-container() {
   display: inline-flex;
   justify-content: center;
   margin: 0 auto;
@@ -6,7 +6,18 @@
   li {
     padding: 0 10px;
   }
-  li:hover{
+  li:hover {
     background: lightgreen;
   }
 }
+
+.nav-box {
+  @include nav-container();
+}
+.main_quick_menu{
+  padding: 23px 0;
+  @include nav-container();
+}
+.top_inside {
+}
+

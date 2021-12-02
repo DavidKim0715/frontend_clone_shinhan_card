@@ -10,21 +10,21 @@ import { computed, defineComponent } from "vue";
 
 const Error404Page = defineComponent({
   name: "Error404Page",
-  components : {  },
-  props :{},
-  emits : {},
-  setup(props){
+  components: {},
+  props: {},
+  emits: {},
+  setup(props) {
     //variables
-    const event = computed(()=>{
-      return 0
-    })
+    const event = computed(() => {
+      return 0;
+    });
     //methods
 
     //computed
 
     //life-cycle
-    return {}
-  }
-})
-export default Error404Page
+    return {};
+  },
+});
+export default Error404Page;
 </script>

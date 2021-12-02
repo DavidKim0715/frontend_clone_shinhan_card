@@ -1,5 +1,5 @@
 <template>
-  <ul class="id_pw_wrap" @change="$emit('user-info',user)">
+  <ul class="id_pw_wrap" @change="$emit('user-info', user)">
     <li>
       <label class="id_label">email</label>
       <input
@@ -24,24 +24,31 @@
 </template>
 
 <script>
-import { computed, defineComponent, onMounted, onUpdated, reactive, watch } from "vue";
+import {
+  computed,
+  defineComponent,
+  onMounted,
+  onUpdated,
+  reactive,
+  watch,
+} from "vue";
 
 const LoginInput = defineComponent({
   name: "LoginInput",
-  components : {  },
-  props :{},
-  setup(props,){
+  components: {},
+  props: {},
+  setup(props) {
     //variables
-    const user= reactive({email : '', pwd: '' })
+    const user = reactive({ email: "", pwd: "" });
 
-    const onEmail = computed(()=> this.user.email)
-    const onPwd = computed(()=> this.user.pwd)
+    const onEmail = computed(() => this.user.email);
+    const onPwd = computed(() => this.user.pwd);
     //methods
 
     //life-cycle
 
-    return { user, onEmail, onPwd} // template에 사용될 getter
-  }
-})
-export default LoginInput
+    return { user, onEmail, onPwd }; // template에 사용될 getter
+  },
+});
+export default LoginInput;
 </script>

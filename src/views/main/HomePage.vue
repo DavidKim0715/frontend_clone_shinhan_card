@@ -1,35 +1,34 @@
 <template>
+  <section class="main_content">
+    <main-search-bar />
+    <main-carousel />
+  </section>
   <section>
-    <h2>홈페이지입니다</h2>
+    <main-quick-menu />
   </section>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref,
-  reactive,
-  computed,
-  toRefs,
-  watch,
-  onMounted,
-  onBeforeMount,
-  onBeforeUpdate,
-  onUpdated,
-  onBeforeUnmount,
-  onUnmounted } from "vue";
-import { useStore } from "vuex";
-interface Pagination {
-  currentPage: number
-  totalPage: number
-}
-const state = reactive<Pagination>({
-  currentPage: 1,
-  totalPage: 0
-})
+import { defineComponent } from "vue";
+import MainSearchBar from "@/components/common/bar/MainSearchBar.vue";
+import MainCarousel from "@/components/common/bar/MainCarousel.vue";
+import MainQuickMenu from "@/components/common/bar/MainQuickMenu.vue";
+// interface Pagination {
+//   currentPage: number
+//   totalPage: number
+// }
+// const state = reactive<Pagination>({
+//   currentPage: 1,
+//   totalPage: 0
+// })
 
 const HomePage = defineComponent({
-  name : 'HomePage',
-  components:{
+  name: "HomePage",
+  components: {
+    MainQuickMenu,
+    MainCarousel,
+    MainSearchBar,
   },
-})
-export default HomePage
+});
+export default HomePage;
 </script>
