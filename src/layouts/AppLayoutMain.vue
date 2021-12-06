@@ -1,8 +1,5 @@
 <template>
-  <header>
-    <header-top />
-    <header-body />
-  </header>
+  <main-header />
   <main>
     <slot />
   </main>
@@ -14,12 +11,12 @@ import HeaderTop from "@/components/common/layout/HeaderTop.vue";
 import HeaderBody from "@/components/common/layout/HeaderBody.vue";
 import FooterCollection from "@/components/common/layout/FooterCollection.vue";
 import { defineComponent } from "vue";
+import MainHeader from "@/components/common/layout/MainHeader.vue";
 const AppLayoutMain = defineComponent({
   name: "AppLayoutMain",
   components: {
+    MainHeader,
     FooterCollection,
-    HeaderBody,
-    HeaderTop,
   },
   setup() {
     return {};

@@ -25,7 +25,7 @@ export default HeaderBody;
   <div class="body_inner">
     <h1>
       <router-link to="/">
-        <img src="@/assets/logo.png" alt="ShinhanCard" />
+        <img src="@/assets/logo.png" alt="ShinhanCard"/>
       </router-link>
     </h1>
     <main-nav-bar />

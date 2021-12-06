@@ -1,7 +1,8 @@
 <template>
-  <header>
-    <header-top />
-    <header-body />
+  <header class="headerBg">
+    <main-header />
+    <main-search-bar />
+    <main-carousel />
   </header>
   <main>
     <slot />
@@ -10,15 +11,22 @@
 </template>
 
 <script lang="ts">
-import HeaderTop from "@/components/common/layout/HeaderTop.vue";
-import HeaderBody from "@/components/common/layout/HeaderBody.vue";
 import FooterCollection from "@/components/common/layout/FooterCollection.vue";
-export default {
+import MainHeader from "@/components/common/layout/MainHeader.vue";
+import MainCarousel from "@/components/common/bar/MainCarousel.vue";
+import MainSearchBar from "@/components/common/bar/MainSearchBar.vue";
+import { defineComponent } from "vue";
+const AppLayoutDefault = defineComponent({
   name: "AppLayoutDefault",
   components: {
+    MainSearchBar,
+    MainCarousel,
+    MainHeader,
     FooterCollection,
-    HeaderBody,
-    HeaderTop,
   },
-};
+  setup(){
+    return{}
+  }
+})
+export default AppLayoutDefault
 </script>

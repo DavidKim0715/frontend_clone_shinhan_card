@@ -5,7 +5,7 @@ const routes: Array<RouteRecordRaw> = [
     path: "/",
     name: "Home",
     component: () =>
-      import(/* webpackChunkName: "HomePage" */ "@/views/main/HomePage.vue"),
+      import(/* webpackChunkName: "HomePage" */ "@/views/default/home/HomePage.vue"),
     meta: {
       layout: "AppLayoutDefault",
       requiredAuth: false,
@@ -16,10 +16,106 @@ const routes: Array<RouteRecordRaw> = [
     name: "MyInfo",
     component: () =>
       import(
-        /* webpackChunkName: "MyInfoPage" */ "@/views/userInfo/UserInfoPage.vue"
+        /* webpackChunkName: "MyInfoPage" */ "@/views/emptyLayout/userInfo/UserInfoPage.vue"
       ),
     meta: {
-      layout: "AppLayoutDefault",
+      layout: "AppLayoutMain",
+      requiredAuth: false,
+    },
+  },
+  {
+    path: "/benefit",
+    name: "Benefit",
+    component: () =>
+      import(
+        /* webpackChunkName: "BenefitPage" */ "@/views/mainLayout/benefit/BenefitPage.vue"
+        ),
+    meta: {
+      layout: "AppLayoutMain",
+      requiredAuth: false,
+    },
+  },
+  {
+    path: "/finance",
+    name: "Finance",
+    component: () =>
+      import(
+        /* webpackChunkName: "FinancePage" */ "@/views/mainLayout/finance/FinancePage.vue"
+        ),
+    meta: {
+      layout: "AppLayoutMain",
+      requiredAuth: false,
+    },
+  },
+  {
+    path: "/card",
+    name: "Card",
+    component: () =>
+      import(
+        /* webpackChunkName: "CardPage" */ "@/views/mainLayout/card/CardPage.vue"
+        ),
+    meta: {
+      layout: "AppLayoutMain",
+      requiredAuth: false,
+    },
+  },
+  {
+    path: "/convenience",
+    name: "Convenience",
+    component: () =>
+      import(
+        /* webpackChunkName: "ConveniencePage" */ "@/views/mainLayout/convenience/ConveniencePage.vue"
+        ),
+    meta: {
+      layout: "AppLayoutMain",
+      requiredAuth: false,
+    },
+  },
+  {
+    path: "/digital",
+    name: "Digital",
+    component: () =>
+      import(
+        /* webpackChunkName: "DigitalPage" */ "@/views/mainLayout/digital/DigitalPage.vue"
+        ),
+    meta: {
+      layout: "AppLayoutMain",
+      requiredAuth: false,
+    },
+  },
+  {
+    path: "/life",
+    name: "Life",
+    component: () =>
+      import(
+        /* webpackChunkName: "LifePage" */ "@/views/mainLayout/life/LifePage.vue"
+        ),
+    meta: {
+      layout: "AppLayoutMain",
+      requiredAuth: false,
+    },
+  },
+  {
+    path: "/topsClub",
+    name: "TopsClub",
+    component: () =>
+      import(
+        /* webpackChunkName: "TopsClubPage" */ "@/views/mainLayout/topsClub/TopsClubPage.vue"
+        ),
+    meta: {
+      layout: "AppLayoutMain",
+      requiredAuth: false,
+    },
+  },
+  {
+    path: "/cS",
+    name: "CS",
+    component: () =>
+      import(
+        /* webpackChunkName: "CSPage" */ "@/views/mainLayout/cs/CSPage.vue"
+        ),
+    meta: {
+      layout: "AppLayoutMain",
       requiredAuth: false,
     },
   },
@@ -28,7 +124,7 @@ const routes: Array<RouteRecordRaw> = [
     name: "Config",
     component: () =>
       import(
-        /* webpackChunkName: "ConfigPage" */ "@/views/config/ConfigPage.vue"
+        /* webpackChunkName: "ConfigPage" */ "@/views/emptyLayout/config/ConfigPage.vue"
       ),
     meta: {
       layout: "AppLayoutDefault",
@@ -40,7 +136,7 @@ const routes: Array<RouteRecordRaw> = [
     name: "SignIn",
     component: () =>
       import(
-        /* webpackChunkName: "SignInPage" */ "@/views/login/SignInPage.vue"
+        /* webpackChunkName: "SignInPage" */ "@/views/emptyLayout/login/SignInPage.vue"
       ),
     meta: {
       layout: "AppLayoutMobile",
