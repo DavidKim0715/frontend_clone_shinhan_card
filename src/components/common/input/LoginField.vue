@@ -7,7 +7,7 @@ import {
   reactive,
   watch,
 } from "vue";
-import { IUserLogin } from "@/views/login/index";
+import { IUserLogin } from "@/views/emptyLayout/login/index";
 
 const LoginField = defineComponent({
   name: "LoginField",

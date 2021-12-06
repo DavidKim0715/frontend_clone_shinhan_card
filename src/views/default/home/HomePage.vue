@@ -1,8 +1,4 @@
 <template>
-  <section class="main_content">
-    <main-search-bar />
-    <main-carousel />
-  </section>
   <section>
     <main-quick-menu />
   </section>
@@ -10,9 +6,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import MainSearchBar from "@/components/common/bar/MainSearchBar.vue";
-import MainCarousel from "@/components/common/bar/MainCarousel.vue";
-import MainQuickMenu from "@/components/common/bar/MainQuickMenu.vue";
+import MainQuickMenu from "@/components/common/tab/MainQuickMenu.vue";
 // interface Pagination {
 //   currentPage: number
 //   totalPage: number
@@ -26,8 +20,6 @@ const HomePage = defineComponent({
   name: "HomePage",
   components: {
     MainQuickMenu,
-    MainCarousel,
-    MainSearchBar,
   },
 });
 export default HomePage;

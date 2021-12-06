@@ -17,16 +17,10 @@
 .swiper_direction_wrapper {
   .swiper_btn_prev {
     background: url("/src/assets/icon/ico-prev.png") 50% 50% / auto 20px no-repeat;
-    position: absolute;
-    left: 17%;
-    top: 37%;
   }
   .swiper_btn_next{
     background: url("/src/assets/icon/ico-prev.png") 50% 50% / auto 20px no-repeat;
-    position: absolute;
     transform: scaleX(-1);
-    left: 79%;
-    top: 37%;
   }
 }
 .btn_prev {
@@ -47,6 +41,31 @@
   border: none;
 }
 
+.my_page_1{
+  background: url("/src/assets/icon/ico_mypage01_m.png") no-repeat;
+  object-fit: cover;
+}
+.my_page_2{
+  background: url("/src/assets/icon/ico_mypage02_m.png") no-repeat;
+}
+.my_page_3{
+  background: url("/src/assets/icon/ico_mypage03_m.png") no-repeat;
+}
+.my_page_4{
+  background: url("/src/assets/icon/ico_mypage04_m.png") no-repeat;
+}
+.my_page_5{
+  background: url("/src/assets/icon/ico_mypage05_m.png") no-repeat;
+}
+.my_page_6{
+  background: url("/src/assets/icon/ico_mypage06_m.png") no-repeat;
+}
+.my_page_7{
+  background: url("/src/assets/icon/ico_mypage07_m.png") no-repeat;
+}
+.my_page_8{
+  background: url("/src/assets/icon/ico_mypage08_m.png") no-repeat;
+}
 // … 버튼 관련 include
 // - 믹스인
 // - 플레이스홀더

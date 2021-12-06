@@ -1,7 +1,7 @@
 <script lang="ts">
 import { computed, defineComponent } from "vue";
 import MenuButton from "@/components/common/button/MenuButton.vue";
-import MainNavBar from "@/components/common/layout/MainNavBar.vue";
+import MainNavBar from "@/components/common/bar/MainNavBar.vue";
 
 const HeaderBody = defineComponent({
   name: "HeaderBody",
@@ -25,7 +25,7 @@ export default HeaderBody;
   <div class="body_inner">
     <h1>
       <router-link to="/">
-        <img src="@/assets/logo.png" alt="ShinhanCard" />
+        <img src="@/assets/logo.png" alt="ShinhanCard"/>
       </router-link>
     </h1>
     <main-nav-bar />

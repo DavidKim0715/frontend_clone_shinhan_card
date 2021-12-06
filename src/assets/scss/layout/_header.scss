@@ -1,3 +1,28 @@
+.headerBg{
+  z-index: 1;
+  &.bg_1{
+    background-color: rgb(63, 68, 145);
+  }
+  &.bg_2{
+    background-color: rgb(77, 66, 159);
+  }
+  &.bg_3{
+    background-color: rgb(110, 90, 212);
+  }
+  &.bg_4{
+    background-color: rgb(40, 110, 130);
+  }
+  &.bg_5{
+    background-color: rgb(100, 65, 149);
+  }
+  &.bg_6{
+    background-color: rgb(52, 51, 123);
+  }
+  &.bg_7{
+    background-color: rgb(2, 122, 162);
+  }
+}
+
 .top_inner {
   display: flex;
   justify-content: space-between;
