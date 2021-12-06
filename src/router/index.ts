@@ -20,7 +20,7 @@ const routes: Array<RouteRecordRaw> = [
       ),
     meta: {
       layout: "AppLayoutDefault",
-      requiredAuth: true,
+      requiredAuth: false,
     },
   },
   {

@@ -24,42 +24,42 @@ export default MainQuickMenu;
 <!--      </template>-->
       <li>
         <router-link to="/" class="">
-          <strong class="icon_name">월별명세서</strong>
+          <strong class="icon_name my_page_1">월별명세서</strong>
         </router-link>
       </li>
       <li>
         <router-link to="/" class="">
-          <strong class="icon_name">이용내역</strong>
+          <strong class="icon_name my_page_2">이용내역</strong>
         </router-link>
       </li>
       <li>
         <router-link to="/" class="">
-          <strong class="icon_name">다음달결제예정</strong>
+          <strong class="icon_name my_page_3">다음달결제예정</strong>
         </router-link>
       </li>
       <li>
         <router-link to="/" class="">
-          <strong class="icon_name">내가받은혜택</strong>
+          <strong class="icon_name my_page_4">내가받은혜택</strong>
         </router-link>
       </li>
       <li>
         <router-link to="/" class="">
-          <strong class="icon_name">이용한도</strong>
+          <strong class="icon_name my_page_5">이용한도</strong>
         </router-link>
       </li>
       <li>
         <router-link to="/" class="">
-          <strong class="icon_name">이용금액결제</strong>
+          <strong class="icon_name my_page_6">이용금액결제</strong>
         </router-link>
       </li>
       <li>
         <router-link to="/" class="">
-          <strong class="icon_name">전자민원접수</strong>
+          <strong class="icon_name my_page_7">전자민원접수</strong>
         </router-link>
       </li>
       <li>
         <router-link to="/" class="">
-          <strong class="icon_name">카드신청</strong>
+          <strong class="icon_name my_page_8">카드신청</strong>
         </router-link>
       </li>
     </ul>

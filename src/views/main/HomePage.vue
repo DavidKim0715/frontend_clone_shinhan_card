@@ -12,7 +12,7 @@
 import { defineComponent } from "vue";
 import MainSearchBar from "@/components/common/bar/MainSearchBar.vue";
 import MainCarousel from "@/components/common/bar/MainCarousel.vue";
-import MainQuickMenu from "@/components/common/bar/MainQuickMenu.vue";
+import MainQuickMenu from "@/components/common/tab/MainQuickMenu.vue";
 // interface Pagination {
 //   currentPage: number
 //   totalPage: number

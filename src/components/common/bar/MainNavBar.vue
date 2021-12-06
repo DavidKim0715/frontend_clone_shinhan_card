@@ -2,7 +2,7 @@
   <nav>
     <ul class="nav-box">
       <li class="nav-item">
-        <router-link class="nav-link" to="/">마이</router-link>
+        <router-link class="nav-link" to="/myInfo">마이</router-link>
       </li>
       <li class="nav-item">
         <router-link class="nav-link" to="/">혜택</router-link>

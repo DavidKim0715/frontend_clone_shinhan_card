@@ -1,7 +1,7 @@
 <script lang="ts">
 import { computed, defineComponent } from "vue";
 import MenuButton from "@/components/common/button/MenuButton.vue";
-import MainNavBar from "@/components/common/layout/MainNavBar.vue";
+import MainNavBar from "@/components/common/bar/MainNavBar.vue";
 
 const HeaderBody = defineComponent({
   name: "HeaderBody",
