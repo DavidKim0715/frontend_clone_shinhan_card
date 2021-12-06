@@ -14,9 +14,12 @@ const HeaderBody = defineComponent({
     //methods
 
     //computed
-
+    const isHome = computed(()=>{
+      // return this.$route.path === '/home'? '@/assets/logo.png' :'@/assets/shinhancard_logo.png'
+      return "@/assets/logo.png";
+    })
     //life-cycle
-    return {};
+    return {isHome};
   },
 });
 export default HeaderBody;
@@ -25,7 +28,10 @@ export default HeaderBody;
   <div class="body_inner">
     <h1>
       <router-link to="/">
-        <img src="@/assets/logo.png" alt="ShinhanCard"/>
+        <img
+          :src="isHome"
+          alt="ShinhanCard"
+        />
       </router-link>
     </h1>
     <main-nav-bar />
