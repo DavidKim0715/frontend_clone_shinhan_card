@@ -48,3 +48,20 @@ ul {
   list-style: none;
   padding-left: 0px;
 }
+// 텍스트 밑줄, 파란색 글자 제거
+a:link {
+  color: #222222;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}

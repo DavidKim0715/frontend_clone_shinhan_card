@@ -1,5 +1,5 @@
 <template>
-  <header class="headerBg">
+  <header class="headerBg" :class="isActive">
     <main-header />
     <main-search-bar />
     <main-carousel />
@@ -15,7 +15,7 @@ import FooterCollection from "@/components/common/layout/FooterCollection.vue";
 import MainHeader from "@/components/common/layout/MainHeader.vue";
 import MainCarousel from "@/components/common/bar/MainCarousel.vue";
 import MainSearchBar from "@/components/common/bar/MainSearchBar.vue";
-import { defineComponent } from "vue";
+import { computed, defineComponent } from "vue";
 const AppLayoutDefault = defineComponent({
   name: "AppLayoutDefault",
   components: {
@@ -25,7 +25,11 @@ const AppLayoutDefault = defineComponent({
     FooterCollection,
   },
   setup(){
-    return{}
+    let idx = 0
+    const isActive = computed(()=>{
+      return`bg_${(++idx)%7}`
+    })
+    return{isActive}
   }
 })
 export default AppLayoutDefault
