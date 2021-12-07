@@ -1,33 +1,38 @@
-@mixin nav-container() {
-  display: inline-flex;
+@mixin nav-container($display : inline-flex) {
+  display: $display;
   justify-content: center;
   margin: 0 auto;
   text-align: center;
+}
+.nav-box {
+  @include nav-container();
   li {
     padding: 0 10px;
   }
   li:hover {
-
     border-bottom: #4868e1 2px solid;
   }
 }
-
-.nav-box {
-  @include nav-container();
-}
-.main_quick_menu{
-  padding: 23px 0;
+.ly_inner{
+  padding: 40px 0;
   width: 100%;
-  @include nav-container();
-  .menu_list{
-    display: flex;
+  .icon_list{
+    @include nav-container($display : flex);
     flex-wrap: wrap;
     height: auto;
-    margin: -16px 0;
-    padding-bottom: 13px;
     li{
-      display: inline-block;
-      width: 22%;
+      display: block;
+      margin-top: 50px;
+      padding: 8px 0;
+      width: 25%;
+      .icon_box{
+        background-size: 30px auto;
+        background-position: center 15px;
+        padding-top : 50px;
+      }
+    }
+    .icon_name{
+      padding: 54px 0 0;
     }
   }
 }
