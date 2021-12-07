@@ -4,8 +4,8 @@ export interface IUserLogin {
 }
 
 export interface ICarousel{
-  idx : number,
-  url : string,
-  src: string,
-  desc: string
+  idx? : number,
+  url? : string,
+  src?: string,
+  desc?: string
 }

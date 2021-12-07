@@ -3,6 +3,10 @@
 // 루트 수준에 전역 변수를 초기화합니다.
 $variable: "initial value";
 
+$breakpoint-mobile: 335px;
+$breakpoint-tablet: 758px;
+$breakpoint-desktop: 1024px;
+
 // 전역 변수를 덮어쓰게 하는 믹스인을 만듭니다.
 @mixin global-variable-overriding {
   $variable: "mixin value" !global;
@@ -26,4 +30,3 @@ $variable: "initial value";
   content: $variable;
 }
 
-$bgColor: red;

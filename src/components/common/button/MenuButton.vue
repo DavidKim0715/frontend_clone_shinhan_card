@@ -14,7 +14,6 @@ export default MenuButton;
 </script>
 <template>
   <button class="btn_all_menu" type="button">
-    <img src="@/assets/icon/ico-all-menu.png" />
     <span class="blind">메뉴</span>
   </button>
 </template>

@@ -17,7 +17,19 @@
 }
 .main_quick_menu{
   padding: 23px 0;
+  width: 100%;
   @include nav-container();
+  .menu_list{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin: -16px 0;
+    padding-bottom: 13px;
+    li{
+      display: inline-block;
+      width: 22%;
+    }
+  }
 }
 .top_inside {
 }

@@ -14,12 +14,9 @@ const HeaderBody = defineComponent({
     //methods
 
     //computed
-    const isHome = computed(()=>{
-      // return this.$route.path === '/home'? '@/assets/logo.png' :'@/assets/shinhancard_logo.png'
-      return "@/assets/logo.png";
-    })
+
     //life-cycle
-    return {isHome};
+    return {};
   },
 });
 export default HeaderBody;
@@ -29,7 +26,7 @@ export default HeaderBody;
     <h1>
       <router-link to="/">
         <img
-          :src="isHome"
+          src="@/assets/shinhancard_logo.png"
           alt="ShinhanCard"
         />
       </router-link>
