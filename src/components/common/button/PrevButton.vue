@@ -19,7 +19,6 @@ export default PrevButton;
 </script>
 <template>
   <button class="btn_prev" @click="goBack" type="button">
-    <img src="@/assets/icon/ico-prev.png" />
     <span class="blind">이전</span>
   </button>
 </template>

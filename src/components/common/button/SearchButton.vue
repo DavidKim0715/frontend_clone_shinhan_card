@@ -1,6 +1,5 @@
 <template>
   <button class="btn_search" type="button">
-    <img src="@/assets/icon/ico-search.png" alt="검색하기" width="25" />
   </button>
 </template>
 <script lang="ts">

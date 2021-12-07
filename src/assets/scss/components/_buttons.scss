@@ -16,55 +16,64 @@
 
 .swiper_direction_wrapper {
   .swiper_btn_prev {
-    background: url("/src/assets/icon/ico-prev.png") 50% 50% / auto 20px no-repeat;
+    background: url('~@/assets/icon/ico-prev.png') no-repeat;
   }
   .swiper_btn_next{
-    background: url("/src/assets/icon/ico-prev.png") 50% 50% / auto 20px no-repeat;
+    background: url('~@/assets/icon/ico-prev.png')  no-repeat;
     transform: scaleX(-1);
   }
 }
 .btn_prev {
-  background: url("/src/assets/icon/ico-prev.png") 50% 50% / auto 20px no-repeat;
+  background: url('~@/assets/icon/ico-prev.png') no-repeat;
   border: none;
 }
 .btn_next {
   //background: url("") no-repeat;
 }
 .btn_search {
-  background: url("/src/assets/icon/ico-search.png") 50% 50% / auto 20px
-    no-repeat;
+  background: url('~@/assets/icon/ico-search.png') no-repeat;
   border: none;
 }
 .btn_all_menu {
-  background: url("/src/assets/icon/ico-all-menu.png") 50% 50% / auto 20px
-    no-repeat;
+  background: url('~@/assets/icon/ico-all-menu.png') no-repeat;
   border: none;
 }
 
 .my_page_1{
-  background: url("/src/assets/icon/ico_mypage01_m.png") no-repeat;
-  object-fit: cover;
+  background: url('~@/assets/icon/ico_mypage01_m.png') no-repeat;
+  background-size: 30px auto;
 }
 .my_page_2{
-  background: url("/src/assets/icon/ico_mypage02_m.png") no-repeat;
+  background: url('~@/assets/icon/ico_mypage02_m.png') no-repeat;
+  background-size: 30px auto;
 }
 .my_page_3{
-  background: url("/src/assets/icon/ico_mypage03_m.png") no-repeat;
+  background: url('~@/assets/icon/ico_mypage03_m.png') no-repeat;
+  background-size: 30px auto;
 }
 .my_page_4{
-  background: url("/src/assets/icon/ico_mypage04_m.png") no-repeat;
+  background: url('~@/assets/icon/ico_mypage04_m.png') no-repeat;
+  background-size: 30px auto;
 }
 .my_page_5{
-  background: url("/src/assets/icon/ico_mypage05_m.png") no-repeat;
+  background: url('~@/assets/icon/ico_mypage05_m.png') no-repeat;
+  background-size: 30px auto;
+
 }
 .my_page_6{
-  background: url("/src/assets/icon/ico_mypage06_m.png") no-repeat;
+  background: url('/src/assets/icon/ico_mypage06_m.png') no-repeat;
+  background-size: 30px auto;
+
 }
 .my_page_7{
-  background: url("/src/assets/icon/ico_mypage07_m.png") no-repeat;
+  background: url('/src/assets/icon/ico_mypage07_m.png') no-repeat;
+  background-size: 30px auto;
+
 }
 .my_page_8{
-  background: url("/src/assets/icon/ico_mypage08_m.png") no-repeat;
+  background: url('/src/assets/icon/ico_mypage08_m.png') no-repeat;
+  background-size: 30px auto;
+
 }
 // … 버튼 관련 include
 // - 믹스인
