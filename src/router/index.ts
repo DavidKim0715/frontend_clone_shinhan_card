@@ -144,6 +144,18 @@ const routes: Array<RouteRecordRaw> = [
     },
   },
   {
+    path: "/signUp",
+    name: "SignUp",
+    component: () =>
+        import(
+            /* webpackChunkName: "SignInPage" */ "@/views/emptyLayout/registration/SignUpPage.vue"
+            ),
+    meta: {
+      layout: "AppLayoutMobile",
+      requiredAuth: false,
+    },
+  },
+  {
     path: "/:pathMatch(.*)*",
     name: "Error",
     component: () => import("@/views/Error404Page.vue"),

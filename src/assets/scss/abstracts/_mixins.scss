@@ -18,3 +18,19 @@
     @content;
   }
 }
+
+/// 요소 크기를 설정하는 헬퍼
+/// @author Kitty Giraudel
+/// @param {Length} $width
+/// @param {Length} $height
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin nav-container($display : inline-flex) {
+  display: $display;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
