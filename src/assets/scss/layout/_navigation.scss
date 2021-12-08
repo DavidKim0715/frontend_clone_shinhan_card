@@ -1,9 +1,5 @@
-@mixin nav-container($display : inline-flex) {
-  display: $display;
-  justify-content: center;
-  margin: 0 auto;
-  text-align: center;
-}
+@import "../abstracts/mixins";
+
 .nav-box {
   @include nav-container();
   li {
@@ -13,6 +9,7 @@
     border-bottom: #4868e1 2px solid;
   }
 }
+
 .ly_inner{
   padding: 40px 0;
   width: 100%;
@@ -23,7 +20,7 @@
     li{
       display: block;
       margin-top: 50px;
-      padding: 8px 0;
+      padding: 15px 0;
       width: 25%;
       .icon_box{
         background-size: 30px auto;
